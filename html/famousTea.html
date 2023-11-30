@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        body {
+            background-color: rgb(209, 220, 187); 
+           /* background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.859d852902d33e492f5e431e30644e12?rik=zYV8tf2TQtIgig&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f011c5957ccf3600000012e7e580a70.jpg%401280w_1l_2o_100sh.jpg&ehk=nqdJeDGSqjm1HNo3Q0amLUwUTPr0yffgtSFHYl1SdfQ%3d&risl=&pid=ImgRaw&r=0');*/
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            margin: auto;
+            display: flex;
+            width: 90vw;
+        }
+
+        .panel {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80vh;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            flex: 1;
+            margin: 20px;
+            position: relative;
+            transition: all 700ms ease-in;
+        }
+
+        .panel h3 {
+            font-size: 24px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            opacity: 0;
+        }
+        .panel li{
+            opacity: 0;
+        }
+
+        .panel.active {
+            flex: 5;
+        }
+        .panel.active li{
+            opacity: 1;
+        }
+        .panel.active h3 {
+            opacity: 1;
+            transition: all 0.7s ease-in 0.4s;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100vw;
+            }
+
+            .panel.panel.active {
+                flex: 2;
+            }
+
+            /* .panel:nth-of-type(4),
+            .panel:nth-of-type(5) {
+                display: none;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="../assets/music/index_bgm.mp3"></audio>
+    <div class="nav">
+        <a href="../index.html">
+            <div class="logo"
+                style="background-image: url('../img/小房子.png');"
+                width="10"
+                height="10">
+                
+            </div>
+        </a>
+        <div class="menu">
+            <ul>
+                <!-- <li>茶叶品种</li>
+                        <li>品茶步骤</li>
+                        <li>制茶步骤</li>
+                        <li>更多资讯</li> -->
+
+            </ul>
+            <ul>
+                <a href="teaMakingStep.html">
+                    <li>制茶步骤</li>
+                </a><a href="famousTea.html">
+                    <li>茶叶品种</li>
+                </a><a href="famousTea.html">
+                    <li>品茶步骤</li>
+                </a><a href="moreDetail.html">
+                    <li>更多资讯</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="panel active" style="background-image: url('../img/西湖龙井.jpg')">
+            <h1>西湖龙井</h1><br/>
+            <li>
+                【历史】 西湖龙井是中国十大名茶之一，属绿茶，其产于浙江省杭州市西湖龙井村周围群山，并因此得名，具有1200多年历史。清乾隆游览杭州西湖时，
+                盛赞西湖龙井茶，把狮峰山下胡公庙前的十八棵茶树封为“御茶”。</li><br/>
+            <li>【特点】西湖龙井茶，外形扁平挺秀，色泽绿翠，内质清香味醇，泡在杯中，芽叶色绿。素以“色绿、香郁、味甘、形美”四绝称著。
+                春茶中的特级西湖龙井、浙江龙井外形扁平光滑，苗锋尖削，芽长于叶，色泽嫩绿，体表无茸毛；汤色嫩绿（黄）明亮；清香或嫩栗香，但有部分茶带高火香；
+                滋味清爽或浓醇；叶底嫩绿，尚完整。夏秋龙井茶，色泽暗绿或深绿，茶身较大，体表无茸毛，汤色黄亮，有清香但较粗糙，
+                滋味浓略涩，叶底黄亮，总体品质比同级春茶差</li>
+        </div>
+        <div class="panel"
+            style="background-image: url('../img/钱塘龙井11.png')">
+            <h1>钱塘龙井</h1>
+            <li>
+                【历史】钱塘龙井，作为中国最著名的绿茶品种之一，被誉为“绿茶之王”。它产于中国浙江省杭州市西湖区的龙井村，以其清香、鲜爽而闻名于世。
+                明代时期，钱塘龙井开始出口到国外，并在国际市场上赢得了良好的声誉。清代时期，钱塘龙井更是成为贡品茶，供奉给皇室和高级官员。</li><br/>
+            <li>【特点】钱塘龙井的茶叶呈扁平条形，色泽嫩绿欲滴；散发出清香幽雅的芳香，有“一片叶子冷香飞”之称；入口鲜爽甜润，回甘悠长，
+                喝后略带苦涩感觉。</li>
+        </div>
+        <div class="panel"
+            style="background-image: url('../img/千岛玉叶11.jpg')">
+            <h1>千岛玉叶</h1>
+            <li>
+                【历史】产于杭州千岛湖畔的山区，原称千岛湖龙井，淳安县千岛湖林场于1982年春开始研究试制。
+                1983年浙江农业大学教授庄晚芳等茶叶专家到淳安考察茶叶生产时，品尝了当时的千岛龙井茶后，根据千岛湖的景色和茶叶粗壮，有白毫的特点，
+                亲笔提名“千岛玉叶”，于1986年1月通过鉴定，1987年注册商标。</li><br/>
+            <li>【特点】千岛玉叶其外形扁挺似玉叶，叶肥芽壮露白毫，色泽绿翠呈嫩黄，香气清鲜持久，滋味鲜嫩醇厚，叶底嫩匀成朵，汤色清澈明净。</li>
+        </div>
+        <div class="panel"
+            style="background-image: url('../img/千岛银针.jpg')">
+            <h1>千岛银针</h1>
+            <li>
+                【历史】据《唐国史补》中记载的唐时名茶中就有建德细茶。明清时期，建德茶叶被列入贡茶，明代谈迁《枣林杂俎》记载其中就有：
+                “建德县芽茶五斤”。《清朝全典》中记载：“本朝37府县贡，浙江有10府县”，当时浙江贡茶的十府县之一严州所贡之茶即为建德芽茶。</li><br/>
+            <li>【特点】千岛银珍茶外形挺直似针，色泽嫩绿鲜活，汤色嫩绿明亮，香高浓郁，鲜醇回甘，冲泡后，悬垂玉立于杯中，兼具饮用和观赏价值。
+                千岛银珍茶的感官特征是由千岛银珍茶独特的自然环境、独特品种、独特生产工艺等要素共同形成。</li>    
+        </div>
+        <div class="panel"
+            sindtyle="background-image: url('https://img.zcool.cn/community/01371f5d4bb20ba8012187f4e3b643.jpg@1280w_1l_2o_100sh.jpg')">
+            <h3>柳井有泉好做饮，君山无处不宜茶.</h3>
+        </div>
+
+    </div>
+    <script>
+        let audio = document.querySelector('audio');
+        audio.play();
+        const panels = document.querySelectorAll('.panel')
+
+        panels.forEach(panel => {
+            panel.addEventListener('click', () => {
+                removeActiveClasses()
+                panel.classList.add('active')
+            })
+        })
+
+        function removeActiveClasses() {
+            panels.forEach(panel => {
+                panel.classList.remove('active')
+            })
+        }
+    </script>
+
+</body>
+
+</html>

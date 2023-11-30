@@ -1,0 +1,63 @@
+        body {
+            font-family: 'Kaiti';
+        }
+
+        .nav {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(195,202,168);
+
+        }
+
+        .nav .logo {
+            width: 5vw;
+            height:10vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+        }
+
+        .nav .menu {
+            width: 80%;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav .menu ul {
+            color: white;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            gap: 15%;
+            /* text-decoration: none; */
+        }
+
+        .nav .menu li {
+            flex: 1;
+        }
+
+        .nav .menu a {
+            text-decoration: none;
+            color: white;
+        }
+                        
+        @media screen and (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav .logo {
+                width: 50vw;
+                height: 50px;
+            }
+
+            .nav .menu {
+                width: 100%;
+                font-size: 1em;
+            }
+
+        }

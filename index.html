@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶</title>
+    <style>
+        body {
+            background-image: url('./img/封面33.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            /* background铺满 */
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            display: flex;
+            flex-direction: column;
+            /* 字体设置为楷体; */
+            font-family: 'KaiTi';
+        }
+
+        .animate-text {
+            width: 100%;
+            height: 40vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            text-wrap: nowrap;
+
+            /* animation: animate 5s linear infinite; */
+        }
+
+        .nav {
+            margin-top: 80vh;
+            margin-left: auto;
+            margin-right: auto;
+            height: 20vh;
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            gap: 4%;
+        }
+
+        .nav .card {
+            border-radius: 10px;
+            position: static;
+            background-color: #fff;
+            height: 100%;
+            flex: 1.5;
+            transition: all 0.6s linear;
+            animation: cardEnter 1.5s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(50%);
+            overflow: hidden;
+        }
+
+        .nav .card.touched {
+            transform: translateY(-20px);
+            scale: 1.1;
+        }
+
+        .nav .card:hover {
+            transform: translateY(-20px);
+            scale: 1.1;
+        }
+
+        .nav .card img {
+            width: 100%;
+            height: 60%;
+        }
+
+        .nav .card img {
+            width: 100%;
+            height: 70%;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav .card .card-content {
+            font-weight: bold;
+            text-align: center;
+            text-wrap: nowrap;
+            background: transparent;
+            /* filter: blur(10px); */
+            /* backdrop-filter: blur(5px); */
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: white;
+            /* background-color: black; */
+
+        }
+
+        @keyframes cardEnter {
+            0% {
+                transform: translateY(40px);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: 0;
+                opacity: 1;
+            }
+        }
+
+        /* 手机端字体变小 */
+        @media screen and (max-width: 600px) {
+            .animate-text {
+                font-size: 1.5em;
+            }
+
+            .animate-text p {
+                width: 90%;
+            }
+
+            .nav .card a {
+                font-size: 1rem;
+            }
+
+            .nav .card {
+                flex: 1;
+                height: 70%;
+            }
+
+            .nav .card:touched {
+                transform: translateY(-20px);
+                scale: 1.1;
+            }
+        }
+
+        /* 女孩样式 */
+        .girlShell {
+            position: absolute;
+            bottom: 20vh;
+            right: 0;
+            width: 40vw;
+            height: 20vh;
+            animation: girlEnter 1.5s ease-in-out;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .girlShell img {
+            width: 30%;
+            height: 100%;
+        }
+        .girlShell span{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .sayText {
+            /* 设置气泡框样式 */
+            /* position: absolute; */
+            background-image: url('img/say.png');
+            background-size: cover;
+            position: absolute;
+            right: 30vh;
+            width: 40vw;
+            height: 40vh;
+            bottom: 20vh;
+            display: flex;
+            /* 利用flex将span居中 */
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        @keyframes girlEnter {
+            0% {
+                transform: translateX(40px);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: 0;
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .girlShell span{
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="assets/music/index_bgm.mp3" controls="controls"></audio>
+    <!-- 进入界面就放音乐 -->
+
+    <div class="animate-text">
+        <p>浮生半日，赴一场品茶之约</p>
+    </div>
+    <div class="nav">
+
+        <div class="card">
+            <a href="html/teaMakingStep.html">
+                <img src="https://img.zcool.cn/community/0113c856580c3132f87512f606d6f5.JPG@1280w_1l_2o_100sh.jpg"
+                    alt="">
+                <div class="card-content">
+                    <a href="">制茶步骤</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="html/famousTea.html">
+                <img src="https://cbu01.alicdn.com/img/ibank/2017/942/133/6498331249_1829288745.jpg" alt="">
+                <div class="card-content">
+                    <a href="html/teaIntroduction.html">品茶步骤</a>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html/famousTea.html">
+                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.4877b749e9272ba2a20c656eeadb2f56?rik=ANVaY6HnHUEOXA&riu=http%3a%2f%2fimg95.699pic.com%2fphoto%2f50049%2f5722.jpg_wh860.jpg&ehk=9VCieWaTHfgXbynlcCD8qlqxBTbCRb7RHsRtPJuvFnQ%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                <div class="card-content">
+                    <a href="html/teaIntroduction.html">茶叶品种</a>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html/moreDetail.html">
+                <img src="https://p1.ssl.qhimg.com/t015395baf1ef529b85.jpg" alt="">
+                <div class="card-content">
+                    <a href="html/teaIntroduction.html">更多资讯</a>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="girlShell">
+        <img src="img/girl-removebg-preview.png" alt="">
+        <span>欢迎来到茶世界，接下来让我们一起探索茶文化吧！</span>
+    </div>
+    <!-- <div class="sayText">
+            <span>欢迎来到茶世界，接下来让我们一起探索茶文化吧！</span>
+
+    </div> -->
+
+
+    <script>
+        //    进入界面就放音乐
+        let audio = document.querySelector('audio');
+        audio.play();
+
+        const words = '浮生半日，赴一场品茶之约';
+        textContainer = document.querySelector('.animate-text');
+        autoText = document.querySelector('.animate-text p');
+        let speed = 250
+        let index = 1;
+        autoText.innerText = 'nice to meet you';
+        autoTextAffect();
+        //    setInterval(autoTextAffect,1000);
+        function autoTextAffect() {
+            autoText.innerText = words.slice(0, index + 1);
+            index = (index + 1) % words.length;
+            //   index=index+1;
+            setTimeout(autoTextAffect, speed);
+        }
+        //    移动端经过card就放大
+        let cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            card.addEventListener('touchstart', () => {
+                card.classList.add('touched');
+                console.log('touched')
+            })
+            card.addEventListener('touchend', () => {
+                card.classList.remove('touched');
+            })
+        })
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/static/js/sakura-less.js"></script>
+</body>
+
+</html>

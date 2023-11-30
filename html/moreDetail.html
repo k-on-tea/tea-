@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        body {
+            /* background-color: #efedd6; */
+            background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.859d852902d33e492f5e431e30644e12?rik=zYV8tf2TQtIgig&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f011c5957ccf3600000012e7e580a70.jpg%401280w_1l_2o_100sh.jpg&ehk=nqdJeDGSqjm1HNo3Q0amLUwUTPr0yffgtSFHYl1SdfQ%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .boxContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .boxContainer .box {
+            /* background-color: steelblue; */
+
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40vw;
+            height: 30vh;
+            margin: 10px;
+            font-size: 150%;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+            transform: translateX(400%);
+            transition: transform 0.4s ease;
+        }
+
+        .box:nth-of-type(even) {
+            transform: translateX(-400%);
+        }
+
+        .box.show {
+            transform: translateX(0);
+        }
+
+        .box h2 {
+            font-size: 45px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .boxContainer .box {
+                font-size: 1em;
+                height: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="../assets/music/index_bgm.mp3"></audio>
+    <div class="nav">
+        <a href="../index.html">
+            <div class="logo"
+                style="background-image: url('../img/小房子.png');">
+            </div>
+        </a>
+        <div class="menu">
+            <ul>
+                <!-- <li>茶叶品种</li>
+                                <li>品茶步骤</li>
+                                <li>茶文化</li>
+                                <li>更多资讯</li> -->
+
+            </ul>
+            <ul>
+                <a href="teaMakingStep.html">
+                    <li>制茶步骤</li>
+                </a><a href="famousTea.html">
+                    <li>茶叶品种</li>
+                </a><a href="famousTea.html">
+                    <li>品茶步骤</li>
+                </a><a href="moreDetail.html">
+                    <li>更多资讯</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="boxContainer">
+        <div class="box">
+            <p>茶由药用转化为习常饮料，严格意义的“茶”便随之产生了，其典型标志便是“茶”（cha）音的出现。郭璞注《尔雅·释木》“槚”云：“树小如栀子，冬生叶，可煮作羹饮。今呼早采者为茶，晚取者为茗，一名荈，蜀人名之苦荼。”可见，汉时“荼”字已有特指饮料“茶”的读音了，“茶”由“荼”分离出来，并走上了“独立”发展道路。但“茶”字的出现则是伴随茶事的发展和商业活动的日益频繁，直到中唐以后的事，也正符合新符号的产生后于人们的社会生活这样一种文字变化的规律。</p>
+        </div>
+        <div class="box">
+            <p>潮州工夫茶是中国古老的传统茶文化中最有代表性的茶道，在潮汕当地更是把茶作为了待客的最佳礼仪。这不仅是因为茶在许多方面有着养生的作用，更因为自古以来茶就有"待君子，清心身"的意境。喝工夫茶是广东潮汕人一项日常生活中最平常不过的事，饭后或者客人来访、好友相见，都是以一壶茶来相伴</p>
+        </div>
+        <div class="box">
+            <p>汉朝 ，茶叶成为佛教“坐禅”的专用滋补品。魏晋南北朝，已有饮茶之风 。隋朝，全民普遍饮茶。 唐代，茶业昌盛，茶叶成为“人家不可一日无茶”，出现茶馆、茶宴、茶会，提倡客来敬茶。宋朝、流行斗茶，贡茶和赐茶。</p>
+        </div>
+        <div class="box">
+            <p>茶源于中国，传于世界，形成了中华民族优秀传统文化组成部分，体现中国人民对美好生活的向往和对健康追求。茶不仅可清心提神，有益于身心健康和人际交往，中国茶文化中的“和敬怡真”的价值观，对今天共建生态文明及人类命运共同体，也可给我们很多有益的启示。
+            </p>
+        </div>
+        <div class="box">
+            <p>仅从茶字演化形成看，历史上称谓和写法较复杂。在古代史料中，茶的名称有荼、槚[jiǎ]、桡[ráo]、蔎[shè]、茗、荈[chuǎn]、葭[jiā]等。至唐代及至陆羽撰写《茶经》之后，“荼”字才被划掉一横成为“茶”字。从此茶字的形、音、义不仅固定下来，且体现出中华民族对真、善、美的人生追求和崇尚自然简单健康的生活哲理与生态文明思想。
+            </p>
+        </div>
+        <div class="box">
+            <p>茶字是会意字，分三部分。木表示草木，人表示中国人，上面是树叶。也就是说中国人发明了用树叶作为饮料。读音是茶，来自茶叶的生产是一茬一茬的收获，故读作“茶”。“茶”字拆开，就是“人在草木间”，又有长寿之意，源于“廿”（草字头）+“人”（中间的“人”字）+
+                “八十”（“木”字）= 一百零八，故一百零八岁的老人被称为“茶寿老人”，寓指爱茶饮茶，遵循“人在草木间”生态自然简单的生活，人便能健康长寿，活到一百零八岁。</p>
+        </div>
+        <div class="box">
+            <p>茶由药用转化为习常饮料，严格意义的“茶”便随之产生了，其典型标志便是“茶”（cha）音的出现。郭璞注《尔雅·释木》“槚”云：“树小如栀子，冬生叶，可煮作羹饮。今呼早采者为茶，晚取者为茗，一名荈，蜀人名之苦荼。”可见，汉时“荼”字已有特指饮料“茶”的读音了，“茶”由“荼”分离出来，并走上了“独立”发展道路。但“茶”字的出现则是伴随茶事的发展和商业活动的日益频繁，直到中唐以后的事，也正符合新符号的产生后于人们的社会生活这样一种文字变化的规律。</p>
+        </div>
+        <div class="box">
+            <p>茶字是会意字，分三部分。木表示草木，人表示中国人，上面是树叶。也就是说中国人发明了用树叶作为饮料。读音是茶，来自茶叶的生产是一茬一茬的收获，故读作“茶”。“茶”字拆开，就是“人在草木间”，又有长寿之意，源于“廿”（草字头）+“人”（中间的“人”字）+
+                “八十”（“木”字）= 一百零八，故一百零八岁的老人被称为“茶寿老人”，寓指爱茶饮茶，遵循“人在草木间”生态自然简单的生活，人便能健康长寿，活到一百零八岁。</p>
+        </div>
+        <div class="box">
+            <p>茶由药用转化为习常饮料，严格意义的“茶”便随之产生了，其典型标志便是“茶”（cha）音的出现。郭璞注《尔雅·释木》“槚”云：“树小如栀子，冬生叶，可煮作羹饮。今呼早采者为茶，晚取者为茗，一名荈，蜀人名之苦荼。”可见，汉时“荼”字已有特指饮料“茶”的读音了，“茶”由“荼”分离出来，并走上了“独立”发展道路。但“茶”字的出现则是伴随茶事的发展和商业活动的日益频繁，直到中唐以后的事，也正符合新符号的产生后于人们的社会生活这样一种文字变化的规律。</p>
+        </div>
+
+    </div>
+    <script>
+        const boxes = document.querySelectorAll('.box')
+
+        window.addEventListener('scroll', checkBoxes)
+
+        checkBoxes()
+
+        function checkBoxes() {
+            const triggerBottom = window.innerHeight / 5 * 4
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top
+
+                if (boxTop < triggerBottom) {
+                    box.classList.add('show')
+                } else {
+                    box.classList.remove('show')
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

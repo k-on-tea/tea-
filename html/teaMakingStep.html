@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        /* ----------------------------------nav  */
+        .shell {
+            background-color: rgb(252, 247, 238);
+            width: 100xw;
+        }
+
+        .shell .img {
+            width: 100vw;
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+        }
+
+        .shell .img .text {
+            width: 80%;
+            font-size: 150%;
+            font-weight: bold;
+            margin: auto auto;
+            text-align: center;
+        }
+
+        .shell .gap {
+            width: 100vw;
+            height: 20vh;
+            background-color: rgb(252, 247, 238);
+            color: black;
+            line-height: 100px;
+            text-align: center;
+            display: flex;
+        }
+
+        .gap {
+            font-size: 1.5em;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .gap .imgContainer {
+            width: 30%;
+            display: flex;
+            /* justify-content: space-around; */
+        }
+
+        .gap .imgContainer img {
+            width: 40%;
+            height: 100%;
+        }
+
+        .gap .imgContainer img.firstImg::after {
+            content: "";
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            background-color: black;
+            transform: translateX(50%);
+            /* opacity: 0.5; */
+            /* position: absolute; */
+        }
+
+        .gap .imgContainer .arrowRight {
+            width: 20%;
+            height: 30%;
+            transform: translateY(80%);
+            opacity: 0;
+            transition: all 1s ease-in-out;
+        }
+
+        .gap .imgContainer .finishImg {
+            opacity: 0;
+            transition: all 1s ease-in-out;
+        }
+
+        .gap .imgContainer .arrowRight.gapActive {
+            opacity: 1;
+        }
+
+        .gap .imgContainer .finishImg.gapActive {
+            opacity: 1;
+        }
+
+        .gap .imgContainer .clickButton {
+            width: 4%;
+            height: 8%;
+            transform: translate(60%, 200%);
+            position: absolute;
+        }
+
+        @media screen and (max-width: 900px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav .logo {
+                width: 50vw;
+                height: 50px;
+            }
+
+            .nav .menu {
+                width: 100%;
+                font-size: 1em;
+            }
+
+            .shell .gap {
+                height: 10vh;
+                /* font-size: 1em; */
+            }
+
+            .shell .gap  {
+                font-size: 1em;
+            }
+            .shel .gap .point{
+                transform: translate(20%,-20%);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="../assets/music/index_bgm.mp3"></audio>
+    <div class="nav">
+        <a href="../index.html">
+            <div class="logo" style="background-image: url('../img/小房子.png');">
+            </div>
+        </a>
+        <div class="menu">
+            <ul>
+                <!-- <li>茶叶品种</li>
+                <li>制茶步骤</li>
+                <li>品茶步骤</li>
+                <li>更多资讯</li> -->
+
+            </ul>
+            <ul>
+                <a href="teaMakingStep.html">
+                    <li>制茶步骤</li>
+                </a><a href="famousTea.html">
+                    <li>茶叶品种</li>
+                </a><a href="famousTea.html">
+                    <li>品茶步骤</li>
+                </a><a href="moreDetail.html">
+                    <li>更多资讯</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="shell">
+        <div class="img" style="background-image: url('../img/底图11.jpg');">
+            <div class="text">
+                <font color="black" size="8">茶为国饮，杭为茶都。<br />一杯清茶，蕴含了杭城的千年文脉。</font>
+            </div>
+        </div>
+        <div class="gap">
+            <h1>采茶</h1>
+            <div class="imgContainer">
+                <img src="../img/point.png" class="clickButton" alt="">
+                <img src="../img/caicha1.png" class="firstImg">
+                <img src="../img/arrow_right.png" class="arrowRight" alt="">
+                <img src="../img/caicha2.png" class="finishImg">
+            </div>
+        </div>
+        <div class="img" style="background-image: url('../img/采茶11.jpg');">
+            <div class="text">
+                【采取】采茶时建议手工采摘，可以保证茶芽的完整性。对于不同的茶叶，采摘的手法也不尽相同，有掐采、提手采、双手采三种手法，其中提手采是茶叶标准的采摘手法。<br />
+                【盛装】把茶叶采摘好后，要及时装入背篓当中，把采摘完成的茶叶全部放在一起，随后将采摘的茶叶进行整理分类，按照种类的不同分别放置一段时间。<br />
+                【收青】收青指的是茶叶的采摘已经接近了尾声，这时需将放置好的茶叶用不同的包装装起来，运往不同的指定地点进行进一步的加工，让茶叶变成各种各样的茶产品。茶、茶食品、含茶饮料等。 </div>
+        </div>
+        <div class="gap">
+            <h1>委凋</h1>
+            <div class="imgContainer">
+                <img src="../img/point.png" class="clickButton" alt="">
+                <img src="../img/caicha1.png" class="firstImg">
+                <img src="../img/arrow_right.png" class="arrowRight" alt="">
+                <img src="../img/caicha2.png" class="finishImg">
+            </div>
+        </div>
+        <div class="img" style="background-image: url('../img/萎凋.jpg');">
+            <div class="text">
+                萎凋过程，不仅要失水，更要通风。<br />
+                传统工艺用竹筛或篾席，都是有孔的盛物容器，利于通风，否则茶青就会沤堆，导致过早发酵，使得成茶出现沤青味和苦涩，并且叶底的红色会扩大，不再是标准的三红七绿。<br />
+                现代工艺，萎凋是将茶青放在综合做青机中，利用电阻或炭火直接加热，使茶青失水，待茶青达到失水标准，会用冷风将茶青吹凉，这个过程也是为了阻止茶青在较高温度下提前开始发酵。</div>
+        </div>
+        <div class="gap">
+            <h1>杀青</h1>
+            <div class="imgContainer">
+                <img src="../img/point.png" class="clickButton" alt="">
+                <img src="../img/shaqing1.png" class="firstImg">
+                <img src="../img/arrow_right.png" class="arrowRight" alt="">
+                <img src="../img/shaqing2.png" class="finishImg">
+            </div>
+        </div>
+        <div class="img" style="background-image: url('../img/杀青11.jpg');">
+            <div class="text">
+                锅温240—260℃，投叶量1.5左右。青叶下锅，先闷炒，待叶温上升，即扬炒。采取多闷少扬，炒匀炒透的原则。翻炒的快慢，视叶子受热程度灵活掌握，做到看青炒青。<br />
+                含水量较少，叶片较薄的奇种以闷炒为宜，火温宜低，时间宜短些。叶子肥大含水量较高的水仙应采取高温闷扬结合的方法，时间宜长些。<br />
+                嫩叶老杀，老叶嫩杀，杀青时间一般在5--7分钟一般趁热揉捻，揉后进行第二次杀青，又叫复炒。复炒锅温200—240℃。将初揉叶撒在锅内闷炒十几秒钟，炒到烫手时起锅，进行复揉。<br />
+                杀青的适度标准杀青到叶子变软，富有粘性，叶色转暗，发生清香，无青臭气，失水约15—22%时，即为适度。 </div>
+        </div>
+        <div class="gap">
+            <h1>揉捻</h1>
+            <div class="imgContainer">
+                <img src="../img/point.png" class="clickButton" alt="">
+                <img src="../img/rounian1.png" class="firstImg">
+                <img src="../img/arrow_right.png" class="arrowRight" alt="">
+                <img src="../img/rounian2.png" class="finishImg">
+            </div>
+        </div>
+        <div class="img" style="background-image: url('../img/揉捻11.jpg');">
+            <div class="text">
+                揉捻是通过“揉”和“捻”的动作，将近似自然叶片形态的杀青叶，用“手工”或“机械”的方法，<br />揉卷成一定形状的过程。<br />
+                工艺的意义在于破裂细胞壁使茶汁释出，使得茶多酚、儿茶素等茶叶有效成分产生聚合，为茶叶的后期发酵准备，同时将松散的茶叶卷曲成条索，有利于冲泡中茶叶内含物质的均衡释放。<br />
+                揉捻的力度、时间、细胞破壁率与茶叶的口感滋味、香气以及后期转化等有密切关系。</div>
+        </div>
+        <div class="gap">
+            <h1>晾晒</h1>
+            <div class="imgContainer">
+                <img src="../img/point.png" class="clickButton" alt="">
+                <img src="../img/liangshai1.png" class="firstImg">
+                <img src="../img/arrow_right.png" class="arrowRight" alt="">
+                <img src="../img/liangshai2.png" class="finishImg">
+            </div>
+        </div>
+        <div class="img" style="background-image: url('../img/晾晒11.jpg');">
+            <div class="text">
+                在保证茶叶的鲜活性的情况下，蒸发部分水分，促进鲜叶内物质的化学反应。晾晒的时间以午后4点-5点的阳光最为适宜。<br />
+                时间以太阳的强度和温度的高低决定，途中要注意的是要均匀的分开，让每一片叶子都能受到阳光的照射。<br />
+                而且要在一定的时间去人工搅拌让每一片茶叶都能均匀的接受太阳光，这样不会造成一面太熟，一面太青的现象，搅拌时要选择柔软的扫把，以免太过用力，破坏了茶叶的表皮组织，被破坏了表皮组织的茶叶都会在下步骤工序中“死掉”。<br />
+                晒至叶色稍微转暗，手摸叶子柔软，失重6%-9%就是理想的程度。</div>
+        </div>
+        <div class="gap">
+            <div class="text">
+                <h1>压制成型</h1>
+            </div>
+        </div>
+        <div class="img" style="background-image: url('../img/压制成饼.jpg');">
+            <div class="text">
+                选择合适的茶叶品种：不同的茶叶品种适合不同的压制方法；<br />
+                合理控制茶叶湿度：在压制过程前要确保茶叶的湿度适当；<br />
+                选择适当的压力和压制时间：压制压力和时间的选择对茶叶的质量和口感有重要影响;<br />
+                均匀分布茶叶：在进行压制之前，需要将茶叶均匀地分布在模具中，以确保茶叶整体受力均衡。<br />
+                适当的贮存和陈化：压制完成后，茶叶需要适当的贮存和陈化，以使茶叶的口感和香气更好。<br />
+                在贮存过程中，需要确保茶叶避免阳光直射以及防潮，保持适当的湿度和通风。</div>
+        </div>
+        <div class="gap">
+            <div class="text">
+                <h1>东西南北中央佛，共饮乾坤一碗茶。</h1>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script>
+    let audio = document.querySelector('audio');
+    audio.play();
+    let imgContainer = document.querySelectorAll('.gap .imgContainer');
+    imgContainer.forEach(element => {
+        element.addEventListener('click', () => {
+            // imgContainer.addEventListener('click', () => {
+            element.querySelector('.gap .arrowRight').classList.toggle('gapActive');
+            element.querySelector('.gap .finishImg').classList.toggle('gapActive');
+
+        })
+    });
+</script>
+
+</html>
